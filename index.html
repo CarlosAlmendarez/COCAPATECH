@@ -530,27 +530,27 @@
       <div class="w-full mb-4">
         <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
-      <form method="POST" class="text-black" action="#" id="contactUSForm">
+      <form id="form">
         <input type="hidden" name="_token" value="1FM94Rv4OSVebfjwstCpsgcG0a7kN8ctJfDBEXbq">
         <div class="flex justify-center">
           <div class="form-group m-4">
-            <input type="text" name="name" class="p-4" style="border-radius: 8px;" placeholder="Nombre" required>
+            <input type="text" name="from_name" id="from_name" class="p-4 text-black" style="border-radius: 8px;" placeholder="Nombre" required>
           </div>
           <div class="form-group m-4">
-            <input type="text" name="email" class="p-4" style="border-radius: 8px;" placeholder="Email" required>
+            <input type="text" name="email" id="email" class="p-4 text-black" style="border-radius: 8px;" placeholder="Email" required>
           </div>
         </div>
         <div class="form-group m-4">
           <!-- <input type="radio"> -->
-          <input type="text" name="phone" class="p-4 w-full md:w-1/2" style="border-radius: 8px;" placeholder="Teléfono" required>
+          <input type="text" name="phone_number" id="phone_number" class="p-4 w-full md:w-1/2 text-black" style="border-radius: 8px;" placeholder="Teléfono" required>
         </div>
         <div class="form-group m-4">
           <div class="time" id="time" data-target-input="nearest">
-            <textarea name="message" placeholder="Mensaje" rows="3" class="form-control border-primary p-4 w-full  md:w-1/2" value="" required=""></textarea>
+            <textarea name="message" id="message" placeholder="Mensaje" rows="3" class="form-control border-primary p-4 w-full  md:w-1/2 text-black" value="" required=""></textarea>
           </div>
         </div>
               
-        <button type="submit" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <button type="submit" id="button" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Enviar mensaje
         </button>
       </form>
@@ -642,17 +642,50 @@
       }
 
       //función para recibir el formualario
-      document.getElementById("contactUSForm").addEventListener("submit", function(e){
-        e.preventDefault();
-        var formData = new FormData(document.getElementById("contactUSForm"));
-        console.log(formData);
-        // Mostrar el contenido de formData en la consola
-        for (const entry of formData.entries()) {
-            console.log(entry[0], entry[1]);
-        }
+      // document.getElementById("contactUSForm").addEventListener("submit", function(e){
+      //   e.preventDefault();
+      //   var formData = new FormData(document.getElementById("contactUSForm"));
+      //   console.log(formData);
+      //   // Mostrar el contenido de formData en la consola
+      //   for (const entry of formData.entries()) {
+      //       console.log(entry[0], entry[1]);
+      //   }
+      // });
+
+      btn = document.getElementById('button');
+
+      document.getElementById('form')
+      .addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.value = 'Enviando...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_x1frsip';
+
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            btn.value = 'Enviar mensaje';
+            document.getElementById('from_name').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('phone_number').value = "";
+            document.getElementById('message').value = "";
+            alert('Enviado correctamente!');
+          }, (err) => {
+            btn.value = 'Enviar mensaje';
+            alert(JSON.stringify(err));
+          });
       });
 
 
     </script>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('-wpKUtZ1zw8h5W_d5')
+</script>
+
   </body>
 </html>
