@@ -44,18 +44,19 @@
               <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Inicio</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Servicios</a>
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#Nuestrosservicios">Servicios</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Proyectos</a>
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#Proyectos">Proyectos</a>
             </li>
           </ul>
-          <button
+          <a
+          href="#contacto"
             id="navAction"
             class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
            Contáctanos
-          </button>
+        </a>
         </div>
       </div>
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
@@ -72,9 +73,9 @@
           <p class="leading-normal text-2xl mb-8">
             Desde desarrollo de software hasta ciberseguridad, estamos aquí para hacer que la tecnología trabaje a tu favor. Descubre cómo podemos llevar tu presencia en línea al siguiente nivel.
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <a href="#contacto" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Contáctanos
-          </button>
+          </a>
         </div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center">
@@ -101,7 +102,7 @@
         </g>
       </svg>
     </div>
-    <section class="bg-white border-b py-8">
+    <section id="Nuestrosservicios" class="bg-white border-b py-8">
       <div class="container max-w-5xl mx-auto m-8">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
           Nuestros servicios
@@ -414,9 +415,26 @@
             </div>
           </div>
         </div>
+        <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Videos publucitarios para tu negocio
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Ofrecemos la creación de videos animados 2D para redes sociales, aumenta de seguidores y clientes con videos hechos a tu medida.
+              Cotización personalizada, precio accesible, tiempos de entrega cortos e incluimos voz en off para narrar en tu video.
+              Precios accesibles desde 900$* MXN
+              <br />
+              <br />
+            </p>
+          </div>
+          <div class="w-full sm:w-1/2 p-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Xy90dxhYIus?si=-lyuBHnMeLXa9iej" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="bg-white border-b py-8">
+    <section id="Proyectos" class="bg-white border-b py-8">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
           Proyectos
@@ -443,9 +461,9 @@
           <div class="mt-auto bg-white overflow-hidden shadow p-4">
             <img src="salsangrita.png" alt="" class="w-full h-auto">
             <div class="flex items-center justify-start">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              <a href="https://salsangrita.com"  target="_blank" class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 Visitar
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -468,9 +486,9 @@
           <div class="mt-auto bg-white overflow-hidden shadow p-4">
             <img src="evoluciona.png" alt="" class="w-full h-auto">
             <div class="flex items-center justify-center">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              <!-- <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 Visitar
-              </button>
+              </button> -->
             </div>
           </div>
         </div>
@@ -493,9 +511,9 @@
           <div class="mt-auto bg-white overflow-hidden shadow p-4">
             <img src="BlowUp.png" alt="" class="w-full h-auto">
             <div class="flex items-center justify-end">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              <!-- <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 Visitar
-              </button>
+              </button> -->
             </div>
           </div>
         </div>
@@ -506,15 +524,43 @@
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
         Conoce más de nosotros
       </h2>
-      <div class="grid grid-cols-2 gap-8 m-8">
-        <div class="d-flex justify-content-content">
-          <iframe class="w-96 h-auto aspect-video aspect-rectangle" src="https://www.youtube.com/embed/Xy90dxhYIus" allowfullscreen></iframe>
+      
+      <div class="flex flex-wrap">
+        <div class="w-full sm:w-1/2 p-6">
+          <iframe width="560" height="315" style="border-radius: 16px;" src="https://www.youtube.com/embed/Xy90dxhYIus?si=-lyuBHnMeLXa9iej" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-    
-        <div class="d-flex justify-content-content">
-          <iframe class="w-96 h-auto aspect-video aspect-rectangle" src="https://www.youtube.com/embed/4F7mlfz1z0k" allowfullscreen></iframe>
+        <div class="w-5/6 sm:w-1/2 p-6">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+            Cocapatech
+          </h3>
+          <p class="text-gray-600 mb-8">
+            Ofrecemos la creación de videos animados 2D para redes sociales, aumenta de seguidores y clientes con videos hechos a tu medida.
+            Cotización personalizada, precio accesible, tiempos de entrega cortos e incluimos voz en off para narrar en tu video.
+            Precios accesibles desde 900$* MXN
+            <br />
+            <br />
+          </p>
         </div>
       </div>
+
+      <div class="flex flex-wrap">
+        <div class="w-5/6 sm:w-1/2 p-6">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+            Visagestion
+          </h3>
+          <p class="text-gray-600 mb-8">
+            Si necesitas tramitar o asesoria al momento de tramitar tanto tu pasaporte o tu visa, somos la mejor
+            opción para ayudarte a conseguirlo de manera rápida y sin engaños, ¡no recibimos dinero hasta que 
+            tengas listos tus tramites!
+            <br />
+            <br />
+          </p>
+        </div>
+        <div class="w-full sm:w-1/2 p-6">
+          <iframe width="560" height="315" style="border-radius: 16px;" src="https://www.youtube.com/embed/4F7mlfz1z0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
     </section>
     
     
@@ -541,35 +587,34 @@
         </g>
       </g>
     </svg>
-    
-    <section class="container mx-auto text-center py-6 mb-12">
+    <section id="contacto" class="container mx-auto text-center py-6 mb-12">
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
         Ponte en contacto con nosotros
       </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
-      <form method="POST" class="text-black" action="#" id="contactUSForm">
+      <form id="form">
         <input type="hidden" name="_token" value="1FM94Rv4OSVebfjwstCpsgcG0a7kN8ctJfDBEXbq">
         <div class="flex justify-center">
           <div class="form-group m-4">
-            <input type="text" name="name" class="p-4" style="border-radius: 8px;" placeholder="Nombre" required>
+            <input type="text" name="from_name" id="from_name" class="p-4 text-black" style="border-radius: 8px;" placeholder="Nombre" required>
           </div>
           <div class="form-group m-4">
-            <input type="text" name="email" class="p-4" style="border-radius: 8px;" placeholder="Email" required>
+            <input type="text" name="email" id="email" class="p-4 text-black" style="border-radius: 8px;" placeholder="Email" required>
           </div>
         </div>
         <div class="form-group m-4">
           <!-- <input type="radio"> -->
-          <input type="text" name="phone" class="p-4 w-full md:w-1/2" style="border-radius: 8px;" placeholder="Teléfono" required>
+          <input type="text" name="phone_number" id="phone_number" class="p-4 w-full md:w-1/2 text-black" style="border-radius: 8px;" placeholder="Teléfono" required>
         </div>
         <div class="form-group m-4">
           <div class="time" id="time" data-target-input="nearest">
-            <textarea name="message" style="border-radius: 8px;" placeholder="Mensaje" rows="3" class="form-control border-primary p-4 w-full  md:w-1/2" value="" required=""></textarea>
+            <textarea name="message" id="message" placeholder="Mensaje" rows="3" class="form-control border-primary p-4 w-full  md:w-1/2 text-black" value="" required=""></textarea>
           </div>
         </div>
               
-        <button type="submit" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <button type="submit" id="button" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Enviar mensaje
         </button>
       </form>
@@ -675,17 +720,50 @@
       }
 
       //función para recibir el formualario
-      document.getElementById("contactUSForm").addEventListener("submit", function(e){
-        e.preventDefault();
-        var formData = new FormData(document.getElementById("contactUSForm"));
-        console.log(formData);
-        // Mostrar el contenido de formData en la consola
-        for (const entry of formData.entries()) {
-            console.log(entry[0], entry[1]);
-        }
+      // document.getElementById("contactUSForm").addEventListener("submit", function(e){
+      //   e.preventDefault();
+      //   var formData = new FormData(document.getElementById("contactUSForm"));
+      //   console.log(formData);
+      //   // Mostrar el contenido de formData en la consola
+      //   for (const entry of formData.entries()) {
+      //       console.log(entry[0], entry[1]);
+      //   }
+      // });
+
+      btn = document.getElementById('button');
+
+      document.getElementById('form')
+      .addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.value = 'Enviando...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_x1frsip';
+
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            btn.value = 'Enviar mensaje';
+            document.getElementById('from_name').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('phone_number').value = "";
+            document.getElementById('message').value = "";
+            alert('Enviado correctamente!');
+          }, (err) => {
+            btn.value = 'Enviar mensaje';
+            alert(JSON.stringify(err));
+          });
       });
 
 
     </script>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('-wpKUtZ1zw8h5W_d5')
+</script>
+
   </body>
 </html>
